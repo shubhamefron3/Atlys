@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Atlys_com" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QuJ-p8-eWF">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AtlysLogo" translatesAutoresizingMaskIntoConstraints="NO" id="urC-tX-1dZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="aPx-18-fda"/>
+                                        </constraints>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gq-77-uTC">
+                                        <rect key="frame" x="0.0" y="160" width="393" height="343"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-F1-Tja">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="343"/>
+                                                <subviews>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="coB-m6-gm8">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="coB-m6-gm8" secondAttribute="height" multiplier="1:1" id="bRk-Q6-DnA"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SOa-F1-Tja" firstAttribute="height" secondItem="3gq-77-uTC" secondAttribute="height" id="629-mH-VbP"/>
+                                            <constraint firstItem="SOa-F1-Tja" firstAttribute="trailing" secondItem="3gq-77-uTC" secondAttribute="trailing" id="BmT-ym-TFJ"/>
+                                            <constraint firstItem="SOa-F1-Tja" firstAttribute="top" secondItem="3gq-77-uTC" secondAttribute="top" id="ZPQ-jC-i8K"/>
+                                            <constraint firstItem="SOa-F1-Tja" firstAttribute="bottom" secondItem="3gq-77-uTC" secondAttribute="bottom" id="psA-J8-GwO"/>
+                                            <constraint firstItem="SOa-F1-Tja" firstAttribute="leading" secondItem="3gq-77-uTC" secondAttribute="leading" id="tmh-Hc-6aS"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="RWy-QW-umi"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="vt2-Zt-JgY"/>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="8gV-2Q-PHt">
+                                        <rect key="frame" x="0.0" y="523" width="393" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="GRi-4Z-spg"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
+                                        <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </pageControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET VISAS ON TIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzg-FF-aQJ">
+                                        <rect key="frame" x="0.0" y="563" width="393" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEr-IY-gc9">
+                                        <rect key="frame" x="0.0" y="619" width="393" height="140"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="utF-J2-vAF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QuJ-p8-eWF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="13h-qd-qTi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QuJ-p8-eWF" secondAttribute="bottom" id="Tmq-87-4Md"/>
+                            <constraint firstItem="QuJ-p8-eWF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c35-mb-Cp0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QuJ-p8-eWF" secondAttribute="trailing" id="hvB-VV-SuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="8gV-2Q-PHt" id="cAL-ge-yJi"/>
+                        <outlet property="scrollView" destination="3gq-77-uTC" id="TxW-lH-PTw"/>
+                        <outlet property="stackView" destination="SOa-F1-Tja" id="p4B-Ak-l0Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AtlysLogo" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
