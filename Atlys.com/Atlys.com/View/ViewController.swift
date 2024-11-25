@@ -68,7 +68,7 @@ final class ViewController: UIViewController {
     
     // Dynamically populate the stack view with images
     private func populateStackViewWithImages() {
-        for (indx,imge) in countriesImages.enumerated() {
+        for (_,imge) in countriesImages.enumerated() {
         
             let imageView = UIImageView(image: UIImage(named: imge) )
             imageView.contentMode = .scaleAspectFill
